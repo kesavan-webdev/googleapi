@@ -1,3 +1,4 @@
+import BussinessList from "@/components/bussinesslist/bussinesslist";
 import Category from "@/components/category/category";
 import Navbar from "@/components/navbar/navbar";
 import SearchBar from "@/components/searchbar/searchbar";
@@ -9,9 +10,10 @@ export default function Home() {
       <Navbar />
       {/* content */}
       <div className="grid grid-cols-1 p-5 gap-10 md:grid-cols-2 w-full">
-        <div>
+        <div className=" flex flex-col gap-5">
           <SearchBar />
           <Category />
+          <BussinessList />
         </div>
 
         <div>

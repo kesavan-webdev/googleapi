@@ -23,7 +23,7 @@ const Category = () => {
     <>
       <h3 className="text-[22px] font-bold">Select Your Fav Category</h3>
       <div className="flex items-center gap-5  bg-slate-300 p-4 rounded-md">
-        {Category.map((CategoryList) => {
+        {Category?.map((CategoryList) => {
           return (
             <CategoryItem key={CategoryList.id} CategoryList={CategoryList} />
           );
